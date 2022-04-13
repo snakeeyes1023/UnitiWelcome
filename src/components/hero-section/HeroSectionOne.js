@@ -16,20 +16,19 @@ const HeroSectionOne = () => {
           <div className="col-lg-6 col-md-10">
             <div className="hero-content-wrap mt-5 mt-lg-0 mt-xl-0">
               <h1 className="fw-bold display-5">
-                Get Fully Control and Visibility your Company
+                Gérer vos locataires partout dans le monde
               </h1>
               <p className="lead">
-                Proactively coordinate quality quality vectors vis-a-vis supply
-                chains. Quickly engage client-centric web services.
+                Mesloc est un outil de gestion de locataires qui vous permet de gérer autant des bien immobilier que votre compte netflix partagé.
               </p>
               <div className="action-btn mt-5 align-items-center d-block d-sm-flex d-lg-flex d-md-flex">
                 <Link href="/request-demo">
-                  <a className="btn btn-primary">Request For Demo</a>
+                  <a className="btn btn-primary">Commencer maintenant</a>
                 </Link>
                 <VideoModal className="true" />
               </div>
               <div className="row justify-content-lg-start mt-60">
-                <h6 className="text-white-70 mb-2">Our Top Clients:</h6>
+                <h6 className="text-white-70 mb-2">Nos plus gros clients:</h6>
                 <div className="col-4 col-sm-3 my-2 ps-lg-0">
                   <Image
                     width={141}
