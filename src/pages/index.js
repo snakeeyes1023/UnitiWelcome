@@ -16,7 +16,7 @@ import { useTranslation } from "next-i18next";
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["home"]))
+      ...(await serverSideTranslations(locale, ["home", "feature", "navbar"]))
     },
   };
 }
@@ -27,8 +27,8 @@ export default function Home() {
 
   return (
     <Layout>
-      <Navbar navDark />
-      <HeroSectionOne title={t("home:WelcomeTitle")} description={t("home:WelcomeContent")} />
+      <Navbar navDark t={t}/>
+      <HeroSectionOne t={t}/>
       <FeatureOne />
       <FeatureImgContentOne />
       <TestimonialOne darkBg />

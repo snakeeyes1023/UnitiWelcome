@@ -5,7 +5,8 @@ import Image from 'next/image';
 
 import VideoModal from '../common/VideoModal';
 
-const HeroSectionOne = ({ title, description }) => {
+const HeroSectionOne = ({t}) => {
+
   return (
     <section
       className="hero-section ptb-120 text-white bg-gradient"
@@ -16,14 +17,14 @@ const HeroSectionOne = ({ title, description }) => {
           <div className="col-lg-6 col-md-10">
             <div className="hero-content-wrap mt-5 mt-lg-0 mt-xl-0">
               <h1 className="fw-bold display-5">
-                {title}
+                {t("home:WelcomeTitle")}
               </h1>
               <p className="lead">
-                {description}
+                {t("home:WelcomeContent")}
               </p>
               <div className="action-btn mt-5 align-items-center d-block d-sm-flex d-lg-flex d-md-flex">
                 <Link href="/request-demo">
-                  <a className="btn btn-primary">Commencer maintenant</a>
+                  <a className="btn btn-primary">{t("feature:StartNow")}</a>
                 </Link>
                 <VideoModal className="true" />
               </div>

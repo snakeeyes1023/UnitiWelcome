@@ -7,7 +7,7 @@ import OffCanvasMenu from './OffCanvasMenu';
 import { navHome, navCompanyLinks, navCompanyPage } from '../../utils/data';
 import dynamic from 'next/dynamic';
 
-const Navbar = ({ navDark }) => {
+const Navbar = ({ navDark, t }) => {
   const [scroll, setScroll] = useState(0);
   const [headerTop, setHeaderTop] = useState(0);
 
@@ -73,23 +73,23 @@ const Navbar = ({ navDark }) => {
             <ul className="nav col-12 col-md-auto justify-content-center main-menu">
               <li>
                 <Link href="/">
-                  <a className="nav-link">Home</a>
+                  <a className="nav-link">{t("navbar:home")}</a>
                 </Link>
               </li>
               <li>
                 <Link href="about-us">
-                  <a className="nav-link">About</a>
+                  <a className="nav-link">{t("navbar:about")}</a>
                 </Link>
               </li>
               <li>
                 <Link href="services">
-                  <a className="nav-link">Services</a>
+                  <a className="nav-link">{t("navbar:service")}</a>
                 </Link>
               </li>
 
               <li>
                 <Link href="pricing">
-                  <a className="nav-link">Pricing</a>
+                  <a className="nav-link">{t("navbar:pricing")}</a>
                 </Link>
               </li>
               <li className="nav-item dropdown">
@@ -100,7 +100,7 @@ const Navbar = ({ navDark }) => {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Company
+                  {t("navbar:company")}
                 </a>
                 <div className="dropdown-menu border-0 rounded-custom shadow py-0 bg-white">
                   <div className="dropdown-grid rounded-custom width-full">
@@ -138,10 +138,10 @@ const Navbar = ({ navDark }) => {
 
           <div className="action-btns text-end me-5 me-lg-0 d-none d-md-block d-lg-block">
             <Link href="login">
-              <a className="btn btn-link text-decoration-none me-2">S'inscrire</a>
+              <a className="btn btn-link text-decoration-none me-2">{t("navbar:register")}</a>
             </Link>
             <Link href="request-demo">
-              <a className="btn btn-primary">Mon portail</a>
+              <a className="btn btn-primary">{t("navbar:mydashboard")}</a>
             </Link>
           </div>
 
