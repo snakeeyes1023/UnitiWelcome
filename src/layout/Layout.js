@@ -7,8 +7,8 @@ const Layout = ({ children, title, desc, hasClass }) => {
       <Head>
         <title>
           {title
-            ? `Quiety | ${title}`
-            : 'Quiety - Next Js Software & IT Solutions React Template'}
+            ? `Mesloc | ${title}`
+            : 'Mesloc - Plateforme de gestion immobilière'}
         </title>
         {desc && <meta name="description" content={desc} />}
         <link rel="icon" href="/favicon.png" />

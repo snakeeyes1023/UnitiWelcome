@@ -13,9 +13,12 @@ import Script from 'next/script'
 import 'react-modal-video/scss/modal-video.scss';
 import Head from 'next/head';
 import { Fragment } from 'react';
+import { appWithTranslation } from 'next-i18next';
+
 
 function MyApp({ Component, pageProps }) {
   return (
+    
     <Fragment>
       <Script
           src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -35,4 +38,4 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default MyApp;
+export default appWithTranslation(MyApp);

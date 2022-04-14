@@ -1,3 +1,4 @@
+const { i18n } = require('./next-i18next.config');
 
 module.exports = ({
   eslint: {
@@ -5,7 +6,7 @@ module.exports = ({
     // your project has ESLint errors.
     ignoreDuringBuilds: true,
   },
-
+  i18n,
   reactStrictMode: false,
   // https://github.com/vercel/next.js/issues/21079
   // Remove this workaround whenever the issue is fixed
@@ -13,8 +14,4 @@ module.exports = ({
     loader: 'akamai',
     path: '/',
   },
-
- 
 });
-
-
