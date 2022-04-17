@@ -21,6 +21,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
+        local-dir: "./out/"
         server: ftp.mesloc.com
         username: ${{ secrets.username }}
         password: ${{ secrets.password }}
