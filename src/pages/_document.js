@@ -1,8 +1,9 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
+import i18nextConfig from '../../next-i18next.config'
 
-const APP_NAME = 'Quiety - Next Js Creative SAAS Technology & IT Solutions React Template';
+const APP_NAME = 'Mesloc - Plateforme de gestion de locaux';
 const APP_DESCRIPTION =
-  'Quiety creative Saas, software technology, Saas agency & business react template. It is best and famous software company and Saas website template.';
+  'Mesloc est une plateforme de gestion de locaux qui vous permet de gérer vos locaux de manière efficace et simple.';
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -10,8 +11,10 @@ class MyDocument extends Document {
   }
 
   render() {
+    const currentLocale = this.props.__NEXT_DATA__.query.locale || i18nextConfig.i18n.defaultLocale
+
     return (
-      <Html lang="en">
+      <Html lang={currentLocale}>
         <Head>
           <link
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Open+Sans:wght@400;600&display=swap"

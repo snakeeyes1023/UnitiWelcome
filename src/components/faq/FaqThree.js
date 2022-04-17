@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next/link';
+import Link from '../../components/Link';
 import { FaCodeBranch, FaMicrophone } from 'react-icons/fa';
 import { BiCopyright, BiPlayCircle } from 'react-icons/bi';
 import {

@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next/link';
+import Link from '../../components/Link';
 import { FaPhoneAlt } from 'react-icons/fa';
 import { BiCommentDetail } from 'react-icons/bi';
 import SectionTitle from '../common/SectionTitle';

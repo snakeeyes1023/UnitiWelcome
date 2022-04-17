@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next/link';
+import Link from '../../components/Link';
 import { ImMobile } from 'react-icons/im';
 import { FiEdit } from 'react-icons/fi';
 import { BiExpand } from 'react-icons/bi';

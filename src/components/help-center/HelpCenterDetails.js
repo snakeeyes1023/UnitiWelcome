@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next/link';
+import Link from '../../components/Link';
 import { FiArrowRight } from 'react-icons/fi';
 import { BiCommentDetail } from 'react-icons/bi';
 import { FaRegEnvelope, FaRegListAlt } from 'react-icons/fa';

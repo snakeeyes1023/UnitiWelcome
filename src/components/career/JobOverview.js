@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next/link';
+import Link from '../../components/Link';
 import { FiClock } from 'react-icons/fi';
 import { FaHistory } from 'react-icons/fa';
 import { BiMap, BiUser, BiWallet } from 'react-icons/bi';
