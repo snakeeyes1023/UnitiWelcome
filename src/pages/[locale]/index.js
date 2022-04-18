@@ -25,15 +25,17 @@ export default function Home() {
     <Layout>
       <Navbar navDark t={t}/>
       <HeroSectionOne t={t}/>
-      <FeatureOne />
-      <FeatureImgContentOne />
-      <TestimonialOne darkBg />
-      <WorkProcessOne />
-      <PricingOne header="true" />
-      <FaqOne />
-      <IntegrationOne />
-      <SupportOne />
+      <FeatureOne t={t} />
+      <FeatureImgContentOne t={t}/>
+      <WorkProcessOne t={t}/>
+      <PricingOne header="true" t={t} />
+
+      <SupportOne  t={t}/>
       <Footer footerGradient />
     </Layout>
   );
 }
+
+//      <FaqOne />
+//<IntegrationOne />
+//<TestimonialOne darkBg />

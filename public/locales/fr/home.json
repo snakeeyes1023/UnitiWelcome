@@ -1,4 +1,72 @@
 {
-    "WelcomeContent": "Mesloc est une application webpour manage building, etc..",
-    "WelcomeTitle": "Manage your building everywere in the world！"
+    "WelcomeContent": "Mesloc est une application web pour gérer tous les types de locations, etc..",
+    "WelcomeTitle": "Gérer vos locations partout dans le monde！",
+    "BiggestClient": "Nos plus gros clients",
+    "StartNow": "Commencer maintenant",
+    "StartNowFree": "Commencer maintenant gratuitement",
+    "KnowMoreAboutUs": "En savoir plus sur nous",
+
+    "AllYouNeed": "Tous ce dont Vous avez besoin",
+    "AllYouNeedDesc": "Gestion rapide et facile à utiliser, exportation de données facile.",
+
+    "Perf": "Facile d'utilisation",
+    "PerfDesc": "L'application à l'origine a été dévellopé pour mon père qu'il ne peut pas ouvrir facebook sans toujours demander me demander de l'aide.",
+    
+    "Secure": "Données sécurisées",
+    "SecureDesc": "Les données sont cryptées et protégées par le système de sécurité. Et stocker au canada.",
+
+    "AllTimeDev": "Dévellopement toutes l'année",
+    "AllTimeDevDesc": "Programmeur dédier as l'application toutes l'année. (As moins qu'il me renvoie as j'oublie c'est moi le patron ;))",
+    
+    "FinishedMissing": "Ne manquez plus aucune information importante",
+    "FinishedMissingDesc": "Nous vous aiderons à trouver les informations manquantes dont vous avez besoin.",
+
+    "SmsIntegration": "Intégration SMS automatisée",
+    "SmsIntegrationDesc": "Envoi automatique d'SMS à vos clients pour prévenir les retards.",
+
+    "AdvanceFeatures": "Fonctionnalités avancées",
+    "AdvanceFeaturesDesc": "Mesloc a été développé à l'origine pour aider des particulier avec leur logement et à ensuite été ouvert pour le monde entier.",
+
+    "MailIntegrationF": "Courriel Intégration",
+    "SmsIntergrationF": "SMS Intégration",
+    "StatsF": "Statistiques faciles",
+    "FastSupportF": "Support rapide",
+    "EndYearCloseF": "Information de comptabilité",
+    "WebsiteF": "Site Web personnel",
+
+    "Process": "Processus",
+    "ProcessTitle": "Une procédure Simple et Rapide",
+    "ProcessDesc": "Fini les étape interminable de la procédure de location deux clique vous suffirons.",
+    "Step": "Étape",
+    "Step1": "Créer un batîment",
+    "Step1Desc": "Modifer votre batîment et entrée c'est information pour votre site web.",
+    "Step2": "Ajouter un loyer à votre batîment",
+    "Step2Desc": "Assigner un loyer à votre batîment.",
+    "Step3": "Créer un locataire",
+    "Step3Desc": "Ajouter un nouveau utilisateur à votre loyer.",
+    "Step4": "Prenez un café",
+    "Step4Desc": "Prenez un café et laisser la magie ce produire.",
+    "Buildings": "Batîments",
+    "Lockers": "Loyers",
+
+    "Pricing": "Tarifs",
+    "PricingTitle": "Regarder nos Tarifs Avantageux",
+    "PricingDesc": "Nos prix ont été créer pour satisfaire tous les types d'utilisations.",
+
+    "NoCreditCard": "Pas de carte de crédit",
+    "FreePremiumTrial": "Abonnement Premium gratuit pour 60 days",
+    "CancelAnyTime": "Annuler à tout moment",
+    "Support247": "Support 24/7",
+    "Free60Days": "60 jours gratuit",
+
+
+    "LetsTry": "Essayer maintenant!",
+    "LetsTryTitle": "Commencer votre Abonnement Gratuit de 60 jours",
+    "LetsTryDesc": "Aucune carte de crédit nécessaire, nous vous offrons un abonnement gratuit de 60 jours.",
+    "ContactWithUs": "Contactez-nous",
+
+    "Bronze": "Bronze",
+    "Gold": "Or",
+    "Platinum": "Platine"
+
 }

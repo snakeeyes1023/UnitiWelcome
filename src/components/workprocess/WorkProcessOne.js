@@ -5,19 +5,17 @@ import { FiTruck } from 'react-icons/fi';
 import { RiNodeTree } from 'react-icons/ri';
 import { GrResources } from 'react-icons/gr';
 
-const WorkProcessOne = () => {
+const WorkProcessOne = ({t}) => {
   return (
     <section className="work-process ptb-120">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-6 col-md-10">
             <div className="section-heading text-center">
-              <h4 className="h5 text-primary">Process</h4>
-              <h2>We Follow Our Work Process</h2>
+              <h4 className="h5 text-primary">{t("home:Process")}</h4>
+              <h2>{t("home:ProcessTitle")}</h2>
               <p>
-                Enthusiastically engage cross-media leadership skills for
-                alternative experiences. Proactively drive vertical systems than
-                intuitive architectures.
+                {t("home:ProcessDesc")}           
               </p>
             </div>
           </div>
@@ -43,11 +41,10 @@ const WorkProcessOne = () => {
                   </i>
                 </div>
                 <div className="icon-content">
-                  <span className="text-primary h6">Step 1</span>
-                  <h3 className="h5 mb-2">Research and Content Planing</h3>
+                  <span className="text-primary h6">{t("home:Step")} 1</span>
+                  <h3 className="h5 mb-2">{t("home:Step1")}</h3>
                   <p>
-                    Progressively foster enterprise-wide systems whereas equity
-                    invested web-readiness harness installed base bandwidth.
+                  {t("home:Step1Desc")}
                   </p>
                 </div>
               </li>
@@ -59,12 +56,10 @@ const WorkProcessOne = () => {
                   </i>
                 </div>
                 <div className="icon-content">
-                  <span className="text-primary h6">Step 2</span>
-                  <h3 className="h5 mb-2">Publishing and Execution</h3>
+                  <span className="text-primary h6">{t("home:Step")} 2</span>
+                  <h3 className="h5 mb-2">{t("home:Step2")}</h3>
                   <p>
-                    Dramatically administrate progressive metrics without
-                    error-free globally simplify standardized alignments
-                    plagiarize distributed.
+                  {t("home:Step2Desc")}
                   </p>
                 </div>
               </li>
@@ -75,12 +70,10 @@ const WorkProcessOne = () => {
                   </i>
                 </div>
                 <div className="icon-content">
-                  <span className="text-primary h6">Step 3</span>
-                  <h3 className="h5 mb-2">Product Prototyping</h3>
+                  <span className="text-primary h6">{t("home:Step")} 3</span>
+                  <h3 className="h5 mb-2">{t("home:Step3")}</h3>
                   <p>
-                    Interactively whiteboard transparent testing procedures
-                    before bricks-and-clicks initiatives administrate
-                    competencies.
+                    {t("home:Step3Desc")}
                   </p>
                 </div>
               </li>
@@ -92,12 +85,10 @@ const WorkProcessOne = () => {
                   </i>
                 </div>
                 <div className="icon-content">
-                  <span className="text-primary h6">Step 4</span>
-                  <h3 className="h5 mb-2">Deliver the Final Product</h3>
+                  <span className="text-primary h6">{t("home:Step")} 4</span>
+                  <h3 className="h5 mb-2">{t("home:Step4")}</h3>
                   <p>
-                    Dramatically plagiarize distributed progressive metrics
-                    without error-free globally simplify standardized
-                    alignments.
+                    {t("home:Step4Desc")}
                   </p>
                 </div>
               </li>

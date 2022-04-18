@@ -6,7 +6,7 @@ import SectionTitle from '../common/SectionTitle';
 import { RiStackLine } from 'react-icons/ri';
 import { BsCodeSlash, BsShieldCheck } from 'react-icons/bs';
 
-const FeatureOne = () => {
+const FeatureOne = ({t}) => {
   return (
     <>
       <section className="feature-promo ptb-120 bg-light">
@@ -14,8 +14,8 @@ const FeatureOne = () => {
           <div className="row justify-content-center">
             <div className="col-lg-6 col-md-10">
               <SectionTitle
-                title="With all the Features You Need"
-                description="Credibly grow premier ideas rather than bricks-and-clicks strategic theme areas distributed for stand-alone web-readiness."
+                title={t("home:AllYouNeed")}
+                description={t("home:AllYouNeedDesc")}
                 centerAlign
               />
             </div>
@@ -28,10 +28,9 @@ const FeatureOne = () => {
                   <RiStackLine className="text-white fa-2x" />
                 </div>
                 <div className="feature-info-wrap">
-                  <h3 className="h5">Good Performance</h3>
+                  <h3 className="h5">{t("home:Perf")}</h3>
                   <p>
-                    Appropriately grow competitive leadership rather than
-                    strategic technically sound processes without state.{' '}
+                    {t("home:PerfDesc")}{' '}
                   </p>
                 </div>
               </div>
@@ -42,10 +41,9 @@ const FeatureOne = () => {
                   <BsShieldCheck className="fa-2x text-white" />
                 </div>
                 <div className="feature-info-wrap">
-                  <h3 className="h5">Highly Secure</h3>
+                  <h3 className="h5">{t("home:Secure")}</h3>
                   <p>
-                    Appropriately grow competitive leadership rather than
-                    strategic technically sound processes without state.{' '}
+                  {t("home:SecureDesc")}{' '}
                   </p>
                 </div>
               </div>
@@ -56,10 +54,9 @@ const FeatureOne = () => {
                   <BsCodeSlash className="fa-2x text-white" />
                 </div>
                 <div className="feature-info-wrap">
-                  <h3 className="h5">Fast Development</h3>
+                  <h3 className="h5">{t("home:AllTimeDev")}</h3>
                   <p>
-                    Appropriately grow competitive leadership rather than
-                    strategic technically sound processes without state.{' '}
+                    {t("home:AllTimeDevDesc")}{' '}
                   </p>
                 </div>
               </div>
@@ -69,21 +66,19 @@ const FeatureOne = () => {
             <div className="col-lg-6 mt-4">
               <div className="position-relative d-flex flex-column h-100 flex-wrap bg-danger-soft p-5 rounded-custom">
                 <div className="cta-left-info mb-2">
-                  <h5>Utilize your software data</h5>
+                  <h5>{t("home:FinishedMissing")}</h5>
                   <p>
-                    Progressively reinvent models and niche revolutionary
-                    benefits for integrated niches.{' '}
+                  {t("home:FinishedMissingDesc")}{' '}
                   </p>
                 </div>
                 <div className="action-btns mt-auto">
                   <Link href="/request-demo">
                     <a className="btn btn-outline-primary btn-sm">
-                      {' '}
-                      Start For Free
+                        {t("home:StartNowFree")}
                     </a>
                   </Link>
                 </div>
-                <div className="cta-img position-absolute right-0 bottom-0">
+                <div className="cta-img position-absolute right-0 bottom-0" >
                   <Image
                     width={223}
                     height={223}
@@ -97,16 +92,15 @@ const FeatureOne = () => {
             <div className="col-lg-6 mt-4">
               <div className="position-relative d-flex flex-column h-100 flex-wrap bg-primary-soft p-5 rounded-custom">
                 <div className="cta-left-info mb-2">
-                  <h5>Get real time updated anytime</h5>
+                  <h5>{t("home:SmsIntegration")}</h5>
                   <p>
-                    Progressively reinvent models and niche revolutionary
-                    benefits for integrated niches.{' '}
+                  {t("home:SmsIntegrationDesc")}{' '}
                   </p>
                 </div>
                 <div className="action-btns mt-auto">
                   <Link href="/request-for-demo">
                     <a className="btn btn-outline-primary btn-sm">
-                      Start For Free
+                      {t("home:StartNowFree")}
                     </a>
                   </Link>
                 </div>

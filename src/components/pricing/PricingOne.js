@@ -4,9 +4,117 @@ import Link from '../../components/Link';
 import { BsCalendar2Check, BsCalendarX, BsCreditCard } from 'react-icons/bs';
 
 import Circle from '../common/Circle';
-import { pricingData } from '../../utils/data';
 
-const PricingOne = ({ header }) => {
+const PricingOne = ({ header, t }) => {
+  const pricingData = [
+    {
+      title: t('home:Bronze'),
+      price: '$0',
+      time: '/month',
+      bgColor: 'bg-white',
+      textColor: 'text-primary',
+      btnColor: 'btn-outline-primary',
+      shape: 'left--40 bottom--40',
+      listItem: [
+        {
+          li: "2 " + t('home:Buildings'),
+        },
+        {
+          li: "10 " + t('home:Lockers'),
+        },
+        {
+          li: t('home:MailIntegrationF'),
+        },
+        {
+          li: t('home:EndYearCloseF'),
+        },
+        {
+          li: t('home:StatsF'),
+        },
+        {
+          li: t("home:WebsiteF"),
+        },
+        {
+          li: "1 GB ",
+        },
+      ],
+    },
+  
+    {
+      title: t('home:Gold'),
+      price: '$45',
+      time: '/month',
+      bgColor: 'bg-gradient',
+      textColor: 'text-warning',
+      btnColor: 'btn-primary',
+  
+      listItem: [
+        {
+          li: "5 " + t('home:Buildings'),
+        },
+        {
+          li: "50 " + t('home:Lockers'),
+        },
+        {
+          li: t('home:SmsIntergrationF'),
+        },
+        {
+          li: t('home:MailIntegrationF'),
+        },
+        {
+          li: t('home:EndYearCloseF'),
+        },
+        {
+          li: t('home:StatsF'),
+        },
+        {
+          li: t("home:WebsiteF"),
+        },
+        {
+          li: "5 GB ",
+        },
+      ],
+    },
+  
+    {
+      title: t('home:Platinum'),
+      price: '$95',
+      time: '/month',
+      bgColor: 'bg-white',
+      textColor: 'text-primary',
+      btnColor: 'btn-outline-primary',
+      shape: 'right--40 top--40',
+      listItem: [
+        {
+          li: "15 " + t('home:Buildings'),
+        },
+        {
+          li: "200 " + t('home:Lockers'),
+        },
+        {
+          li: t('home:SmsIntergrationF'),
+        },
+        {
+          li: t('home:MailIntegrationF'),
+        },
+        {
+          li: t('home:EndYearCloseF'),
+        },
+        {
+          li: t('home:StatsF'),
+        },
+        {
+          li: t("home:WebsiteF"),
+        },
+        {
+          li: t("home:FastSupportF"),
+        },
+        {
+          li: "15 GB ",
+        },
+      ],
+    },
+  ];
   return (
     <section className="pricing-section pt-60 pb-120  position-relative z-2">
       <div className="container">
@@ -15,12 +123,10 @@ const PricingOne = ({ header }) => {
             <div className="row justify-content-center">
               <div className="col-lg-6 col-md-10">
                 <div className="section-heading text-center">
-                  <h4 className="h5 text-primary">Pricing</h4>
-                  <h2>Check Our Valuable Price</h2>
+                  <h4 className="h5 text-primary">{t("home:Pricing")}</h4>
+                  <h2>{t("home:PricingTitle")}</h2>
                   <p>
-                    Conveniently mesh cooperative services via magnetic
-                    outsourcing. Dynamically grow value whereas accurate
-                    e-commerce vectors.{' '}
+                    {t("home:PricingDesc")}{' '}
                   </p>
                 </div>
               </div>
@@ -34,7 +140,7 @@ const PricingOne = ({ header }) => {
                     </span>
                   </div>
                   <div className="media-body fw-medium h6 mb-0">
-                    No credit card required
+                    {t("home:NoCreditCard")}
                   </div>
                 </div>
               </div>
@@ -46,7 +152,7 @@ const PricingOne = ({ header }) => {
                     </span>
                   </div>
                   <div className="media-body fw-medium h6 mb-0">
-                    Get 30 day free trial
+                    {t("home:FreeTrial")}
                   </div>
                 </div>
               </div>
@@ -58,7 +164,7 @@ const PricingOne = ({ header }) => {
                     </span>
                   </div>
                   <div className="media-body fw-medium h6 mb-0">
-                    Cancel anytime
+                   {t("home:CancelAnyTime")}
                   </div>
                 </div>
               </div>
@@ -92,7 +198,7 @@ const PricingOne = ({ header }) => {
                   </ul>
                 </div>
                 <Link href="/request-demo">
-                  <a className={`btn ${pricing.btnColor} mt-2`}>Buy Now</a>
+                  <a className={`btn ${pricing.btnColor} mt-2`}>{t("home:StartNow")}</a>
                 </Link>
 
                 {pricing.shape && (

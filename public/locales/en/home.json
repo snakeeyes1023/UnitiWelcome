@@ -1,4 +1,74 @@
 {
-    "WelcomeContent": "Mesloc is an application web for manage building, etc..",
-    "WelcomeTitle": "Manage your building everywere in the world！"
+    "WelcomeContent": "Mesloc is an application web for manage building, all type of locations, etc..",
+    "WelcomeTitle": "Manage your building everywere in the world！",
+    "BiggestClient": "Our biggest client",
+    "StartNow": "Start now",
+    "StartNowFree": "Start now for free",
+    "KnowMoreAboutUs": "Know More About Us",
+
+    "AllYouNeed": "All you need in One place",
+    "AllYouNeedDesc": "Fast mangaging and easy to use, easy data exportation.",
+
+    "Perf": "Easy to use",
+    "PerfDesc": "Application design at origin for my father that he can't open facebook without say please help me.",
+
+    "Secure": "Highly Secure",
+    "SecureDesc": "Appropriately grow competitive leadership rather than strategic technically sound processes without state.",
+
+    "AllTimeDev": "All time development",
+    "AllTimeDevDesc": "Dedicated programmer as the application all year round",
+
+    "FinishedMissing": "Stop missing any important information",
+    "FinishedMissingDesc": "We will help you to find the missing information that you need.",
+
+    "SmsIntegration": "Automated SMS integration",
+    "SmsIntegrationDesc": "Sms send to your clients to prevent late.",
+
+    "AdvanceFeatures": "Advance Features, Understand Business",
+    "AdvanceFeaturesDesc": "Mesloc has been devloppe at orgin to help private customer and after has been open for the world-wide.",
+
+    "MailIntegrationF": "Mail Integration",
+    "SmsIntergrationF": "SMS Integration",
+    "StatsF": "Easy Statistics",
+    "FastSupportF": "Fast Support",
+    "EndYearCloseF": "End of year close info",
+    "WebsiteF": "Custom Website",
+
+
+    "Process": "Process",
+    "ProcessTitle": "A Process That Makes Us Easier",
+    "ProcessDesc": "No more indecisive, no more wasting time, no more wasting your time.",
+    "Step": "Step",
+    "Buildings": "Buildings",
+    "Lockers": "Lockers",
+
+    "Step1": "Create a building",
+    "Step1Desc": "Custom your building and get information about it for your website.",
+    "Step2": "Add Locker to your building",
+    "Step2Desc": "Assign new locker to your building",
+    "Step3": "Add user to your locker",
+    "Step3Desc": "Create a user and add the locker previously created.",
+    "Step4": "Take a coffee",
+    "Step4Desc": "Take a coffee and enjoy the application.",
+
+    "Pricing": "Pricing",
+    "PricingTitle": "Check Our Valuable Price",
+    "PricingDesc": "Our price as been create for all type of case.",
+
+    "NoCreditCard": "No Credit Card Needed",
+    "FreePremiumTrial": "Free Premium trial for 60 days",
+    "CancelAnyTime": "Cancel Anytime",
+    "Support247": "Support 24/7",
+    "Free60Days": "Free 60-day premium trial",
+
+
+    "LetsTry": "Let's Try!",
+    "LetsTryTitle": "Start Your 60-Day Free Trial Premium",
+    "LetsTryDesc": "No credit card needed, no contract, no commitments.",
+    "ContactWithUs": "Contact with Us",
+
+    "Bronze": "Bronze",
+    "Gold": "Gold",
+    "Platinum": "Platinum"
+
 }
