@@ -10,7 +10,7 @@ import IntegrationFeature from '@components/integration/IntegrationFeature';
 import { useTranslation } from "next-i18next";
 import { getStaticPaths, makeStaticProps } from '../../../lib/getStatic'
 
-const getStaticProps = makeStaticProps(['navbar', 'common'])
+const getStaticProps = makeStaticProps(['navbar', 'common', 'home'])
 export { getStaticPaths, getStaticProps }
 
 const Integrations = () => {
@@ -26,7 +26,7 @@ const Integrations = () => {
       />
       <IntegrationFeature />
       <Promo bgWhite />
-      <SupportOne className />
+      <SupportOne className t={t}/>
       <Footer footerLight />
     </Layout>
   );

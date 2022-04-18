@@ -13,7 +13,7 @@ import FeatureImgContentTwo from '@components/feature-img-content/FeatureImgCont
 import { useTranslation } from "next-i18next";
 import { getStaticPaths, makeStaticProps } from '../../../lib/getStatic'
 
-const getStaticProps = makeStaticProps(['navbar', 'common'])
+const getStaticProps = makeStaticProps(['navbar', 'common', 'home'])
 export { getStaticPaths, getStaticProps }
 
 const AboutUs = () => {
@@ -28,7 +28,7 @@ const AboutUs = () => {
       <OurTeam />
       <TestimonialTwo />
       <OurOffice />
-      <SupportOne className="true" />
+      <SupportOne className="true" t={t}/>
       <Footer footerLight />
     </Layout>
   );

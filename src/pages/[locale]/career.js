@@ -9,7 +9,7 @@ import CareerFeature from '@components/career/CareerFeature';
 import { useTranslation } from "next-i18next";
 import { getStaticPaths, makeStaticProps } from '../../../lib/getStatic'
 
-const getStaticProps = makeStaticProps(['navbar', 'common'])
+const getStaticProps = makeStaticProps(['navbar', 'common', 'home'])
 export { getStaticPaths, getStaticProps }
 
 
@@ -29,8 +29,8 @@ const Career = () => {
       {/* <OpenJobs />
       <CareerPromo />
       <CtaTwo /> */}
-      <SupportOne className />
-      <Footer footerLight />
+      <SupportOne className t={t}/>
+      <Footer footerLight t={t}/>
     </Layout>
   );
 };

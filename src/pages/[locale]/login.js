@@ -2,9 +2,16 @@ import React from 'react';
 import Link from '../../components/Link';
 import Image from 'next/image';
 import Layout from '@layout/Layout';
+import { useTranslation } from "next-i18next";
+import { getStaticPaths, makeStaticProps } from '../../../lib/getStatic'
 
+const getStaticProps = makeStaticProps(['navbar', 'common', 'home'])
+export { getStaticPaths, getStaticProps }
 
 const Login = () => {
+  
+  const { t } = useTranslation();
+  
   return (
     <Layout title="Login" desc="This is login page">
       <section

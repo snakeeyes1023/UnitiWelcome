@@ -5,11 +5,11 @@ import { FaDribbble, FaFacebook, FaGithub, FaTwitter } from 'react-icons/fa';
 import { useTranslation } from "next-i18next";
 import { getStaticPaths, makeStaticProps } from '../../../lib/getStatic'
 
-const getStaticProps = makeStaticProps(['navbar', 'common'])
+const getStaticProps = makeStaticProps(['navbar', 'common', 'home'])
 export { getStaticPaths, getStaticProps }
 
 const ComingSoon = () => {
-  
+
   const { t } = useTranslation();
 
   return (
