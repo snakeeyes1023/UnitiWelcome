@@ -4044,3 +4044,14 @@ li.setup-process-item:not(:last-child):before {
 .offcanvas-end{
   z-index: 9999;
 }
+
+/*======================
+17. CSS Bug Fix SECTION CSS
+=======================*/
+
+a:link {
+  text-decoration: none !important;
+}
+a:hover {
+  text-decoration: none !important;
+}

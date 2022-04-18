@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { IoPlayCircleOutline } from 'react-icons/io5';
 import ModalVideo from 'react-modal-video';
 
-const VideoModal = ({ className, onlyButton }) => {
+const VideoModal = ({ className, onlyButton, text }) => {
   const [open, setOpen] = useState(false);
   return (
     <>
@@ -25,7 +25,7 @@ const VideoModal = ({ className, onlyButton }) => {
         <IoPlayCircleOutline className={`${onlyButton && 'fa-2x'}`} />
 
         {!onlyButton && (
-          <span className="text-white ms-1 small"> Watch Video</span>
+          <span className="text-white ms-1 small"> {text}</span>
         )}
       </a>
     </>

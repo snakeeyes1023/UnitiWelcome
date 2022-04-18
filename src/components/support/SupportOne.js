@@ -4,7 +4,7 @@ import { FaRegCheckCircle } from 'react-icons/fa';
 
 import VideoModal from '../common/VideoModal';
 
-const SupportOne = ({ className }) => {
+const SupportOne = ({ className, t }) => {
   return (
     <section
       className={`${
@@ -26,17 +26,16 @@ const SupportOne = ({ className }) => {
               <div className="subscribe-info-wrap text-center position-relative z-2">
                 <div className="section-heading">
                   <h4 className="h5 text-warning">
-                    Let&apos;s Try! Get Free Support
+                    {t("home:LetsTry")}
                   </h4>
-                  <h2>Start Your 14-Day Free Trial</h2>
+                  <h2>{t("home:LetsTryTitle")}</h2>
                   <p>
-                    We can help you to create your dream website for better
-                    business revenue.
+                    {t("home:LetsTryDesc")}
                   </p>
                 </div>
                 <div className="form-block-banner mw-60 m-auto mt-5">
                   <Link href="/contact-us">
-                    <a className="btn btn-primary">Contact with Us</a>
+                    <a className="btn btn-primary">{t("home:ContactWithUs")}</a>
                   </Link>
 
                   <VideoModal className="true" />
@@ -45,25 +44,25 @@ const SupportOne = ({ className }) => {
                   <li className="nav-item">
                     <span>
                       <FaRegCheckCircle className="far me-2 text-primary" />
-                      Free 14-day trial
+                      {t("home:Free60Days")}
                     </span>
                   </li>
                   <li className="nav-item">
                     <span>
                       <FaRegCheckCircle className="far me-2 text-primary" />
-                      No credit card required
+                      {t("home:NoCreditCard")}
                     </span>
                   </li>
                   <li className="nav-item">
                     <span>
                       <FaRegCheckCircle className="far me-2 text-primary" />
-                      Support 24/7
+                      {t("home:Support247")}
                     </span>
                   </li>
                   <li className="nav-item">
                     <span>
                       <FaRegCheckCircle className="far me-2 text-primary" />
-                      Cancel anytime
+                      {t("home:CancelAnyTime")}
                     </span>
                   </li>
                 </ul>

@@ -2,8 +2,16 @@ import React from 'react';
 import Link from '../../components/Link';
 import Image from 'next/image';
 import { FaDribbble, FaFacebook, FaGithub, FaTwitter } from 'react-icons/fa';
+import { useTranslation } from "next-i18next";
+import { getStaticPaths, makeStaticProps } from '../../../lib/getStatic'
+
+const getStaticProps = makeStaticProps(['navbar', 'common'])
+export { getStaticPaths, getStaticProps }
 
 const ComingSoon = () => {
+  
+  const { t } = useTranslation();
+
   return (
     <section
       className="coming-soon-section min-vh-100 ptb-120 overflow-hidden position-relative w-100 d-flex flex-column justify-content-center"

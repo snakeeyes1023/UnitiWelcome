@@ -24,12 +24,12 @@ const HeroSectionOne = ({t}) => {
               </p>
               <div className="action-btn mt-5 align-items-center d-block d-sm-flex d-lg-flex d-md-flex">
                 <Link href="/request-demo">
-                  <a className="btn btn-primary">{t("feature:StartNow")}</a>
+                  <a className="btn btn-primary">{t("home:StartNow")}</a>
                 </Link>
-                <VideoModal className="true" />
+                <VideoModal className="true" text={t("common:WatchVideo")} />
               </div>
               <div className="row justify-content-lg-start mt-60">
-                <h6 className="text-white-70 mb-2">Nos plus gros clients:</h6>
+                <h6 className="text-white-70 mb-2">{t("home:BiggestClient")}:</h6>
                 <div className="col-4 col-sm-3 my-2 ps-lg-0">
                   <Image
                     width={141}

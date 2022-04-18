@@ -4,7 +4,7 @@ import { FiArrowRight } from 'react-icons/fi';
 import { BsShieldCheck } from 'react-icons/bs';
 import { FaCheckCircle, FaFingerprint } from 'react-icons/fa';
 
-const FeatureImgContentOne = () => {
+const FeatureImgContentOne = ({t}) => {
   return (
     <>
       <section className="why-choose-us ptb-120">
@@ -17,44 +17,41 @@ const FeatureImgContentOne = () => {
                     <BsShieldCheck />
                   </span>
                 </div>
-                <h2>Advanced Analytics, Understand Business</h2>
+                <h2>{t("home:AdvanceFeatures")}</h2>
                 <p>
-                  Distinctively promote parallel vortals with ubiquitous
-                  e-markets. Proactively benchmark turnkey optimize
-                  next-generation strategic leadership without resource sucking
-                  ideas.
+                  {t("home:AdvanceFeaturesDesc")}
                 </p>
                 <ul className="list-unstyled d-flex flex-wrap list-two-col mt-4 mb-4">
                   <li className="py-1">
                     <FaCheckCircle className="fas me-2 text-primary mb-1" />
-                    Thought leadership
+                    {t("home:MailIntegrationF")}
                   </li>
                   <li className="py-1">
                     <FaCheckCircle className="fas me-2 text-primary mb-1" />
-                    Personal branding
+                    {t("home:SmsIntergrationF")}
                   </li>
                   <li className="py-1">
                     <FaCheckCircle className="fas me-2 text-primary mb-1" />
-                    Modernized prospecting
+                    {t("home:StatsF")}
                   </li>
                   <li className="py-1">
                     <FaCheckCircle className="fas me-2 text-primary mb-1" />
-                    Better win rates
+                    {t("home:FastSupportF")}
                   </li>
                   <li className="py-1">
                     <FaCheckCircle className="fas me-2 text-primary mb-1" />
-                    Showcasing success
+                    {t("home:EndYearCloseF")}
                   </li>
                   <li className="py-1">
                     <FaCheckCircle className="fas me-2 text-primary mb-1" />
-                    Sales compliance
+                    {t("home:WebsiteF")}
                   </li>
                 </ul>
                 <a
                   href="about-us.html"
                   className="read-more-link text-decoration-none"
                 >
-                  Know More About Us{' '}
+                   {t("home:KnowMoreAboutUs")}{' '}
                   <span className="far ms-2 mb-1">
                     <FiArrowRight />
                   </span>
@@ -76,7 +73,16 @@ const FeatureImgContentOne = () => {
           </div>
         </div>
       </section>
-      <section className="image-feature pt-60 pb-120">
+      
+    </>
+  );
+};
+
+export default FeatureImgContentOne;
+
+/**
+
+<section className="image-feature pt-60 pb-120">
         <div className="container">
           <div className="row justify-content-between align-items-center">
             <div className="col-lg-5 col-12 order-lg-1">
@@ -124,8 +130,6 @@ const FeatureImgContentOne = () => {
           </div>
         </div>
       </section>
-    </>
-  );
-};
 
-export default FeatureImgContentOne;
+       * 
+ */
