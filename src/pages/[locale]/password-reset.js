@@ -2,8 +2,15 @@ import React from 'react';
 import Image from 'next/image';
 import Link from '../../components/Link';
 import Layout from '@layout/Layout';
+import { useTranslation } from "next-i18next";
+import { getStaticPaths, makeStaticProps } from '../../../lib/getStatic'
 
+const getStaticProps = makeStaticProps(['navbar', 'common', 'home'])
+export { getStaticPaths, getStaticProps }
 const PasswordReset = () => {
+
+  const { t } = useTranslation();
+
   return (
     <Layout title="Password Reset" desc="This is password reset page">
       <section

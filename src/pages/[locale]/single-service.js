@@ -12,7 +12,7 @@ import SingleServiceFeatureTwo from '@components/services/SingleServiceFeatureTw
 import { useTranslation } from "next-i18next";
 import { getStaticPaths, makeStaticProps } from '../../../lib/getStatic'
 
-const getStaticProps = makeStaticProps(['navbar', 'common'])
+const getStaticProps = makeStaticProps(['navbar', 'common', 'home'])
 export { getStaticPaths, getStaticProps }
 
 

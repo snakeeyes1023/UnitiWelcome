@@ -10,7 +10,7 @@ import TestimonialTwo from '@components/testimonial/TestimonialTwo';
 import { useTranslation } from "next-i18next";
 import { getStaticPaths, makeStaticProps } from '../../../lib/getStatic'
 
-const getStaticProps = makeStaticProps(['navbar', 'common'])
+const getStaticProps = makeStaticProps(['navbar', 'common', 'home'])
 export { getStaticPaths, getStaticProps }
 
 const services = () => {
@@ -27,7 +27,7 @@ const services = () => {
 
       <ServiceOne />
       <TestimonialTwo />
-      <SupportOne className="true" />
+      <SupportOne className="true" t={t}/>
       <Footer footerLight />
     </Layout>
   );

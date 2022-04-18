@@ -6,8 +6,17 @@ import Image from 'next/image';
 import Layout from '@layout/Layout';
 import Rating from '@components/common/Rating';
 import { registerTestimonial, registerTestimonialTarget } from '@utils/data';
+import { useTranslation } from "next-i18next";
+import { getStaticPaths, makeStaticProps } from '../../../lib/getStatic'
+
+const getStaticProps = makeStaticProps(['navbar', 'common', 'home'])
+export { getStaticPaths, getStaticProps }
+
 
 const Register = () => {
+
+  const { t } = useTranslation();
+
   return (
     <Layout title="Sign Up" desc="This is sign up page">
       <section
