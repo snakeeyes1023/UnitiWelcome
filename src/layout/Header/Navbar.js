@@ -77,18 +77,18 @@ const Navbar = ({ navDark, t }) => {
                 </Link>
               </li>
               <li>
-                <Link href="about-us">
+                <Link href="/about-us">
                   <a className="nav-link">{t("navbar:about")}</a>
                 </Link>
               </li>
               <li>
-                <Link href="services">
+                <Link href="/services">
                   <a className="nav-link">{t("navbar:service")}</a>
                 </Link>
               </li>
 
               <li>
-                <Link href="pricing">
+                <Link href="/pricing">
                   <a className="nav-link">{t("navbar:pricing")}</a>
                 </Link>
               </li>
@@ -137,10 +137,10 @@ const Navbar = ({ navDark, t }) => {
           </div>
 
           <div className="action-btns text-end me-5 me-lg-0 d-none d-md-block d-lg-block">
-            <Link href="login">
+            <Link href="/login">
               <a className="btn btn-link text-decoration-none me-2">{t("navbar:register")}</a>
             </Link>
-            <Link href="request-demo">
+            <Link href="/request-demo">
               <a className="btn btn-primary">{t("navbar:mydashboard")}</a>
             </Link>
           </div>

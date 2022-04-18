@@ -10,12 +10,18 @@ import HeroSectionTwo from '@components/hero-section/HeroSectionTwo';
 import TestimonialTwo from '@components/testimonial/TestimonialTwo';
 import FeatureImgContentTwo from '@components/feature-img-content/FeatureImgContentTwo';
 
+import { useTranslation } from "next-i18next";
+import { getStaticPaths, makeStaticProps } from '../../../lib/getStatic'
 
+const getStaticProps = makeStaticProps(['navbar', 'common'])
+export { getStaticPaths, getStaticProps }
 
 const AboutUs = () => {
+  const { t } = useTranslation();
+
   return (
     <Layout title="About Us" desc="this is about us page">
-      <Navbar classOption="navbar-light" />
+      <Navbar classOption="navbar-light" t={t}/>
       <HeroSectionTwo />
       <OurStory />
       <FeatureImgContentTwo />

@@ -1,8 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import Link from '../../components/Link';
+import { useTranslation } from "next-i18next";
+import { getStaticPaths, makeStaticProps } from '../../../lib/getStatic'
+
+const getStaticProps = makeStaticProps(['home', 'navbar', 'common'])
+export { getStaticPaths, getStaticProps }
 
 const NotFoundPage = () => {
+  
+  const { t } = useTranslation();
+
   return (
     <div>
       <section

@@ -7,12 +7,19 @@ import PageHeader from '@components/common/PageHeader';
 import ServiceOne from '@components/services/ServiceOne';
 import SupportOne from '@components/support/SupportOne';
 import TestimonialTwo from '@components/testimonial/TestimonialTwo';
+import { useTranslation } from "next-i18next";
+import { getStaticPaths, makeStaticProps } from '../../../lib/getStatic'
 
+const getStaticProps = makeStaticProps(['navbar', 'common'])
+export { getStaticPaths, getStaticProps }
 
 const services = () => {
+
+  const { t } = useTranslation();
+
   return (
     <Layout title="Services" desc="this is services page  ">
-      <Navbar classOption="navbar-light" />
+      <Navbar classOption="navbar-light" t={t} />
       <PageHeader
         title="We are Development Experts"
         desc="Seamlessly actualize client-based users after out-of-the-box value. Globally embrace strategic data through frictionless expertise."
